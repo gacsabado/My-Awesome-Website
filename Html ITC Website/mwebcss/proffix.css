@@ -1,0 +1,168 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  /*background-image: linear-gradient(-120deg, #fccb90 0%, #d57eeb 100%);*/
+}
+
+.header {
+  padding: 380px;
+  text-align: center;
+  background-image: url(/img/m_1.png);
+  background-size: cover;
+  color: rgb(255, 255, 255);
+}
+
+.header h1 {
+  font-size: 40px;
+  opacity: 0; /* Initial opacity set to 0 */
+  transition: opacity 0.5s ease; /* Transition for opacity */
+}
+
+.header.fade-in h1{
+  opacity: 1;
+}
+
+.header p{
+  opacity: 0; /* Initial opacity set to 0 */
+  transition: opacity 0.5s ease; /* Transition for opacity */
+}
+
+.header.fade-in p{
+  opacity: 1;
+}
+
+/*SQUARE BANNER*/
+
+.square{
+  margin-top: -10%;
+  margin-bottom: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+
+}
+
+.sq1, .sq2, .sq3{
+  width: 350px;
+  height: 350px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 5px 5px 30px 0px #4158D0;
+  border-radius: 30px;
+}
+
+/*
+.sq2{
+  width: 300px;
+  height: 300px;
+  background-color: rgb(0, 255, 255);
+  box-shadow: rgba(0, 0, 0, 0.248);
+  border-radius: 15px;
+  
+}
+
+.sq3{
+  width: 300px;
+  height: 300px;
+  margin-left:50%;
+  background-color: rgba(149, 0, 255, 0.278);
+  box-shadow: rgba(0, 0, 0, 0.248);
+  border-radius: 15px;
+  
+}
+
+*/
+
+
+
+
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.side {
+  flex: 30%;
+  background-color: #4158D0;
+  background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 26%, #FFCC70 100%);
+  padding: 20px;
+}
+
+.side h1{
+  margin:10px;
+}
+
+.side p{
+  margin:10px;
+}
+
+.side1{
+  width: 400px;
+  height: auto;
+  border-radius: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0px 0px 10px 0px #00000069;
+}
+
+.main {
+  flex: 70%;
+  padding: 20px;
+}
+
+.main h1{
+  margin:10px;
+}
+
+.main p{
+  margin:10px;
+}
+
+.landscape-container {
+  width: 1020px; /* Set the desired width for the landscape container */
+  height: 500px; /* Set the desired height for the landscape container */
+  overflow: hidden;
+}
+
+.landscape-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  object-fit: cover; /* This will crop the image to cover the container */
+}
+
+.fakeimg {
+  background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 20%, #FFCC70 100%);
+  border-radius: 20px;
+  box-shadow: 5px 10px 15px 0px #0000007e;
+  width: 100%;
+  padding: 20px;
+}
+
+.footer {
+  padding: 20px;
+  height: 300px;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  background: rgb(23, 23, 78);
+}
+
+@media screen and (max-width: 700px) {
+  .row {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+
